@@ -6,6 +6,89 @@ body{
 }
 .top{
   margin-top: 50px;
+  &__links{
+    padding: 0px 5px;
+    &__brand{
+      img{
+        max-width: 100%;
+        padding: 0px;
+        background-color: inherit;
+        border: none;
+      }
+    }
+  }
+  &__card{
+    img{
+      position: relative;
+      max-width: 100%;
+    }
+    &__caption{
+      background-color: #fff;
+      padding-bottom: 10px;
+      h4{
+        margin-bottom: 5px;
+      }
+      a{
+        color: #40E0D0;
+        font-weight: 700;
+      }
+    }
+    &__popular{
+      &__views-count{
+        background-color: #40e0d0;
+        text-align: right;
+        height: 35px;
+        padding: 8px;
+        border-right: 1px solid #fff;
+        &:before{
+          content: '';
+          display: inline-block;
+          background-image: url(/web2/img/blog-sprite.png);
+          height: 16px;
+          position: absolute;
+          top: 11px;
+          left: 17px;
+          background-position: -73px 0;
+          width: 20px;
+        }
+      }
+      &__comments-count{
+        background-color: #40e0d0;
+        text-align: right;
+        height: 35px;
+        padding: 8px;
+        border-right: 1px solid #fff;
+        &:before{
+          content: '';
+          display: inline-block;
+          background-image: url(/web2/img/blog-sprite.png);
+          height: 16px;
+          position: absolute;
+          top: 12px;
+          left: 23px;
+          background-position: -16px 0;
+          width: 20px;
+        }
+      }
+      &__likes-count{
+        background-color: #40e0d0;
+        text-align: right;
+        height: 35px;
+        padding: 8px;
+        &:before{
+          content: '';
+          display: inline-block;
+          background-image: url(/web2/img/blog-sprite.png);
+          height: 16px;
+          position: absolute;
+          top: 12px;
+          left: 23px;
+          background-position: -33px 0;
+          width: 20px;
+        }
+      }
+    }
+  }
 }
 .slider {
   &__indicators {
@@ -19,7 +102,7 @@ body{
     }
   }
   &__control {
-    opacity: .9 !important;
+    opacity: 1 !important;
     &__glyphicon_left {
       background-color: aqua;
       width: 40px !important;
