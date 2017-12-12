@@ -1,3 +1,41 @@
 //#myCarousel .carousel-control.left {
 //  background-image: url(../../img/prevarrow.png);
 //}
+body{
+  background-color: #191970 !important;
+}
+.top{
+  margin-top: 50px;
+}
+.slider {
+  &__indicators {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #fff;
+    left: 36.3%;
+    width: 87.7%;
+    li{
+      background-color: #40e0d0;
+    }
+  }
+  &__control {
+    opacity: .9 !important;
+    &__glyphicon_left {
+      background-color: aqua;
+      width: 40px !important;
+      height: 40px !important;
+      left: 10px !important;
+      bottom: 0;
+      padding: 3px;
+    }
+    &__glyphicon_right {
+      background-color: aqua;
+      width: 40px !important;
+      height: 40px !important;
+      right: 10px !important;
+      bottom: 0;
+      padding: 3px;
+    }
+  }
+}
+
