@@ -10,50 +10,76 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-    <header>
+    <!--<header>-->
         <div class="container top">
-            <div class="col-md-6 slider top__slider">
-                <div id="myCarousel" class="carousel slide slider__carousel" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators indicators slider__indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
+            <div class="col-md-9 main top__main">
+                <div class="col-md-8 slider top__main__slider">
+                    <div id="myCarousel" class="carousel slide slider__carousel" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators indicators slider__indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
 
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner inner slider__inner">
-                        <div class="item slider__inner__item active">
-                            <img src="img/avengers-1.jpg" alt="Los Angeles" style="width:100%;">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner inner slider__inner">
+                            <div class="item slider__inner__item active">
+                                <img src="img/avengers-1.jpg" alt="Los Angeles" style="width:100%;">
+                            </div>
+
+                            <div class="item slider__inner__item">
+                                <img src="img/avengers-3.jpg" alt="Chicago" style="width:100%;">
+                            </div>
+
+                            <div class="item slider__inner__item">
+                                <img src="img/avengers-4.jpg" alt="New york" style="width:100%;">
+                            </div>
                         </div>
 
-                        <div class="item slider__inner__item">
-                            <img src="img/avengers-3.jpg" alt="Chicago" style="width:100%;">
-                        </div>
-
-                        <div class="item slider__inner__item">
-                            <img src="img/avengers-4.jpg" alt="New york" style="width:100%;">
-                        </div>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control slider__control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left slider__control__glyphicon_left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control slider__control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right slider__control__glyphicon_right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control slider__control" href="#myCarousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left slider__control__glyphicon_left"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control slider__control" href="#myCarousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right slider__control__glyphicon_right"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
-            </div>
-            <div class="col-md-3 links top__links">
-                <div class="row">
-                    <div class="col-md-6 brand top__links__brand"><img src="img/twitter.jpg" alt="" class="thumbnail"></div>
-                    <div class="col-md-6 brand top__links__brand"><img src="img/fb.png" alt="" class="thumbnail"></div></div>
-                <div class="row">
-                    <div class="col-md-6 brand top__links__brand"><img src="img/google+.png" alt="" class="thumbnail"></div>
-                    <div class="col-md-6 brand top__links__brand"><img src="img/youtube.png" alt="" class="thumbnail"></div>
+                <div class="col-md-4 links top__main__links">
+                    <div class="row">
+                        <div class="col-md-6 brand top__links__brand"><img src="img/twitter.jpg" alt="" class="thumbnail"></div>
+                        <div class="col-md-6 brand top__links__brand"><img src="img/fb.png" alt="" class="thumbnail"></div></div>
+                    <div class="row">
+                        <div class="col-md-6 brand top__links__brand"><img src="img/google+.png" alt="" class="thumbnail"></div>
+                        <div class="col-md-6 brand top__links__brand"><img src="img/youtube.png" alt="" class="thumbnail"></div>
+                    </div>
+                </div>
+                <div class="navigation col-md-12">
+                    <nav class="some navigation__some">
+                        <div class="container-fluid">
+                            <div class="navbar-header navigation__some__navbar-header">
+                                <a href="#" class="navbar-brand navigation__some__navbar-header__navbar-brand"><i class="glyphicon glyphicon-home"></i></a>
+                            </div>
+                            <ul class="nav navbar-nav menu navigation__some__menu">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                            <form action="/action_page.php" class="navbar-form navbar-left navigation__some__navbar-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button class="btn btn-default" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </nav>
                 </div>
             </div>
             <div class="col-md-3 card top__card">
@@ -65,13 +91,13 @@
                     </time>
                 </div>
                 <div class="popular top__card__popular">
-                    <div class="col-md-4 views-count top__card__popular__views-count">256</div>
-                    <div class="col-md-4 comments-count top__card__popular__comments-count">12</div>
-                    <div class="col-md-4 likes-count top__card__popular__likes-count">83</div>
+                    <div class="col-md-3 views-count top__card__popular__views-count">256</div>
+                    <div class="col-md-3 comments-count top__card__popular__comments-count">12</div>
+                    <div class="col-md-3 likes-count top__card__popular__likes-count">83</div>
                 </div>
             </div>
         </div>
-    </header>
+    <!--</header>-->
 <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
 <!--<script type="text/javascript" src="js/bootstrap.min.js"></script>-->
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
