@@ -139,10 +139,79 @@ body{
         &:last-child{
           border-right: 1px solid #ccc;
         }
+        &:hover{
+          background-color: #eee;
+        }
+        a{
+          color: #000;
+          &:hover{
+            background-color: inherit;
+          }
+        }
       }
     }
     &__navbar-form{
-      margin-left: 10px !important;
+      margin-left: 15px !important;
+      &__control{
+        -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        padding: 7px 10px;
+        background-color: #F5F5F5;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 0px;
+        &:focus{
+          border-color: #40e0d0;
+          outline: 0;
+          -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+        }
+      }
+      &__button{
+        background-color: #40e0d0;
+        border-radius: 0;
+        display: inline-block;
+        border: 1px solid transparent;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 7px 12px;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.navigation__some__container-fluid{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.navigation__some__navbar-header__navbar-brand i{
+  color: #40e0d0;
+}
+.main{
+  &__scarlett{
+
+    &__wrap{
+      background-color: #fff;
+      margin-top: 25px;
+      &__image{
+        text-align: center;
+        padding: 25px;
+        img{
+          max-width: 100%;
+          border-radius: 50%;
+          border: 2px solid #40e0d0;
+          padding: 5px;
+        }
+      }
+      &__caption{
+        text-align: center;
+      }
     }
   }
 }
